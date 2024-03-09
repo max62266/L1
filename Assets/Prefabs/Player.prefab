@@ -184,6 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685769864269696386}
   - component: {fileID: 9194615389519066335}
+  - component: {fileID: 7492932583164891072}
   m_Layer: 5
   m_Name: Game Over Screen
   m_TagString: Untagged
@@ -225,6 +226,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec51ffa13ffd676468c571a259c44d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7492932583164891072
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005105589590216367}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 285c8a288af9bc14393ccc984551d178, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1492053095067221804
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +743,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1324907194225004699
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285490813365452452}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d35be19fc671bd04da3d9d076802999d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8547155761615571018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1084,7 @@ CharacterController:
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &9095740927377553793
@@ -1063,6 +1102,7 @@ MonoBehaviour:
   Gravity: 9.8
   JumpForce: 7
   Speed: 5
+  animator: {fileID: 1324907194225004699}
 --- !u!114 &9095740927377553804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,6 +1150,7 @@ MonoBehaviour:
   valueRectTransform: {fileID: 8701376820479055794}
   gameplayUI: {fileID: 5561245035460522322}
   gamepOverScreen: {fileID: 1005105589590216367}
+  animator: {fileID: 1324907194225004699}
 --- !u!1001 &9095740928771343349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1182,6 +1223,12 @@ PrefabInstance:
 --- !u!4 &8768553913278833694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e9e4f41218802bc4691b32526600458f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9095740928771343349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8285490813365452452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e9e4f41218802bc4691b32526600458f,
     type: 3}
   m_PrefabInstance: {fileID: 9095740928771343349}
   m_PrefabAsset: {fileID: 0}
